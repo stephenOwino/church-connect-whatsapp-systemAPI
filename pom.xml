@@ -115,6 +115,13 @@
             <version>2.3.4</version>
         </dependency>
 
+        <dependency>
+            <groupId>me.paulschwarz</groupId>
+            <artifactId>spring-dotenv</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/com.twilio.sdk/twilio -->
         <dependency>
             <groupId>com.twilio.sdk</groupId>
