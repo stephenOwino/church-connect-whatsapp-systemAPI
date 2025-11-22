@@ -1,5 +1,7 @@
 package com.stephenotieno.church_whatsapp_system.churchconnect.service;
 
+import com.stephenotieno.church_whatsapp_system.churchconnect.dto.MenuRequest;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -129,7 +131,7 @@ public class MenuService {
     /**
      * Send custom menu (for future WhatsApp native buttons)
      */
-    public void sendCustomMenu(String phoneNumber, MenuRequest menuRequest) {
+    public void sendCustomMenu(String phoneNumber, @Valid MenuRequest menuRequest) {
         // Future: Implement WhatsApp native interactive buttons
         // For now, send formatted text
         StringBuilder menu = new StringBuilder();
